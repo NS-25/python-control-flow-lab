@@ -10,12 +10,12 @@
 # - Use a conditional statement to check if `python_is_fun` is `True`.
 # - If `python_is_fun` is `True`, print the message "Python is fun!"
 
-def print_greeting():
-    # Your code goes here. Remember to indent!
-    python_is_fun = True
-    if python_is_fun:
-        print("Python is fun!")
-    python_is_fun = True;
+# def print_greeting():
+#     # Your code goes here. Remember to indent!
+#     python_is_fun = True
+#     if python_is_fun:
+#         print("Python is fun!")
+#     python_is_fun = True;
 # Call the function
 # print_greeting()
 
@@ -49,4 +49,34 @@ def check_letter():
     else:
         print(f"Invalid input. Please enter a valid letter");
 # Call the function
-check_letter()
+# check_letter()
+##########################
+# Exercise 2: Old enough to vote?
+#
+# Write a Python function named `check_voting_eligibility` that determines if a user is old enough to vote.
+# Fill in the logic to perform the eligibility check inside the function.
+#
+# Function Details:
+# - Prompt the user to input their age: "Please enter your age: "
+# - Validate the input to ensure the age is a possible value (no negative numbers).
+# - Determine if the user is eligible to vote. Set a variable for the voting age.
+# - Print a message indicating whether the user is eligible to vote based on the entered age.
+#
+# Hints:
+# - Use the `input()` function to capture the user's age.
+# - Use `int()` to convert the input to an integer. Ensure to handle any conversion errors gracefully.
+# - Use a conditional statement to check if the age meets the minimum voting age requirement.
+
+def check_voting_eligibility():
+    age_input = int(input("Please enter your age:  "));
+    voting_age = 18;
+    if age_input >= voting_age:
+        print("User is eligible to vote!");
+    else:
+        print("Please enter valid age!")
+
+
+    # Your control flow logic goes here
+
+# Call the function
+check_voting_eligibility()
